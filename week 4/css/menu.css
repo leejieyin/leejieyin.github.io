@@ -76,3 +76,28 @@ body {
 .hamburger {
     display: none;
 }
+
+@media screen and (max-width: 900px) {
+    .navbar {
+        width: 95%;
+        margin: 20px auto;
+        padding: 10px 0;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .phone-and-button {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .contact-button {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
