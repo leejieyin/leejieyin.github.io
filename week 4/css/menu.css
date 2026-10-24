@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+    width: 100%;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 15px;
+    margin: 20px 16px;
+    background-color: white;
+
+    .logo img {
+        width: 130px;
+    }
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+
+.nav-links p {
+    font-size: 11px;
+    font-weight: 420;
+    margin: 0;
+}
+
+.services {
+    color: #ff5a1f;
+}
+
+.phone-and-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.phone-and-button img {
+    width: 16px;
+}
+
+
+.phoneno {
+    font-size: 11px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.contact-button {
+    background-color: #ff5a1f;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 5px;
+    font-size: 10px;
+    margin: 0;
+}
+
+
+.hamburger {
+    display: none;
+}
