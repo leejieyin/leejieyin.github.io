@@ -101,3 +101,19 @@ body {
         display: block;
     }
 }
+
+@media screen and (max-width: 600px) {
+
+    .navbar {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .phone-and-button {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
