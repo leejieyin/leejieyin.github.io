@@ -446,3 +446,49 @@ body {
     }
 }
 
+@media screen and (max-width: 300px) {
+    .hero-text h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .hero-description {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .services-heading {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .services-heading h2 {
+        font-size: 24px;
+    }
+    
+    .services-heading p {
+        text-align: left;
+        font-size: 12px;
+    }
+
+    .service-text h3 {
+        font-size: 16px;
+    }
+
+    .service-image {
+        width: 40%;
+    }
+
+    .ps-text h3 {
+        font-size: 16px;
+    }
+
+    .ps-text p {
+        font-size: 12px;
+    }
+
+    .ps-button {
+        font-size: 12px;
+    }
+}
+
