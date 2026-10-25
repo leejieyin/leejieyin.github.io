@@ -141,6 +141,10 @@ body {
         flex-direction: column-reverse;
     }
 
+.company-logos img {
+        width: 12%;
+        height: auto;
+    }
 
 }
 
@@ -149,7 +153,14 @@ body {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 45px;
+        gap: 20px 0;
     }
 
-
+ .company-logos img {
+        width: 35%;
+        height: auto;
+    }
 }
