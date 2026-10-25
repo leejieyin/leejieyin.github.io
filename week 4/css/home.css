@@ -208,6 +208,51 @@ body {
     height: auto;
 }
 
+.proposal-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F3F3F3;
+    border-radius: 25px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    padding: 30px;
+}
+
+.ps-text {
+    width: 45%;
+}
+
+.ps-text h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.ps-text p {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.ps-button {
+    display: inline-block;
+    background-color: #191A23;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 12px 18px;
+    margin-top: 10px;
+}
+
+.ps-image {
+    width: 40%;
+}
+
+.ps-image img {
+    width: 100%;
+    height: auto;
+}
+
 @media screen and (max-width: 1100px) {
     .nav-links p {
         font-size: 15px;
