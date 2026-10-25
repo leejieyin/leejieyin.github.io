@@ -97,6 +97,111 @@ body {
     filter: grayscale(100%);
 }
 
+.services {
+    margin-top: 100px;
+}
+
+.services-heading {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.services-heading h2 {
+    background-color: #B9FF66;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+.services-heading p {
+    width: 550px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.cards-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px 0;
+}
+
+.service-card {
+    width: 43%;
+    min-height: 130px;
+    border: 1px solid #191A23;
+    border-radius: 20px;
+    box-shadow: 0 4px 0 #191A23;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gray-card {
+    background-color: #F3F3F3;
+}
+
+.green-card {
+    background-color: #B9FF66;
+}
+
+.black-card {
+    background-color: #191A23;
+    color: white;
+}
+
+.service-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.service-text h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.service-text h3 span {
+    background-color: #B9FF66;
+    color: #191A23;
+    border-radius: 4px;
+    padding: 0 3px;
+}
+
+.green-card .service-text h3 span {
+    background-color: white;
+}
+
+.black-card .service-text h3 span {
+    background-color: white;
+}
+
+.service-text p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    margin: 0;
+}
+
+.service-text p img {
+    width: 25px;
+    height: 25px;
+}
+
+.service-image {
+    width: 35%;
+    height: auto;
+}
+
 @media screen and (max-width: 1100px) {
     .nav-links p {
         font-size: 15px;
