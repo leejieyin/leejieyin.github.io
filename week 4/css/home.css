@@ -327,6 +327,20 @@ body {
 }
 
 @media screen and (max-width: 700px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .navbar {
+        margin-top: 15px;
+    }
+
+    .hero-description {
+    width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
+
     .company-logos {
         display: flex;
         justify-content: space-between;
@@ -337,8 +351,98 @@ body {
         gap: 20px 0;
     }
 
- .company-logos img {
+    .company-logos img {
         width: 35%;
         height: auto;
     }
+
+    .services {
+        margin-top: 45px;
+    }
+
+    .services-heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 25px;
+    }
+
+    .services-heading p {
+       width: 100%;
+       box-sizing: border-box;
+       margin: 0;
+       font-size: 13px;
+       text-align: center;
+    }
+
+    .services-heading p br {
+        display: none;
+    }
+
+    .service-text p {
+    font-size: 0;
+    }
+
+    .service-text p img {
+    width: 25px;
+    height: 25px;
+    }
+
+    .cards-box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service-card {
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 160px;
+        padding: 16px 20px;
+    }
+
+    .service-image {
+        width: 35%;
+        height: auto;
+    }
+
+    .proposal-section {
+        box-sizing: border-box;
+        padding: 20px;
+        gap: 15px;
+        margin-top: 40px;
+        align-items: center;
+    }
+
+     .ps-text {
+        width: 100%;
+    }
+
+    .ps-text h3 {
+        font-size: 18px;
+    }
+
+    .ps-text p {
+        overflow-wrap: break-word;
+    }
+
+    .ps-text p br {
+        display: none;
+    }
+
+    .ps-image {
+        display: none;
+    }
+
+    .ps-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .ps-button {
+        padding: 12px 10px;
+        text-align: center;
+    }
 }
+
