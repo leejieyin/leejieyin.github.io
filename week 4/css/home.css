@@ -458,17 +458,25 @@ body {
     }
 
     .services-heading {
-        align-items: flex-start;
-        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
     }
 
     .services-heading h2 {
         font-size: 24px;
+         margin: 0;
     }
     
     .services-heading p {
-        text-align: left;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        text-align: center;
         font-size: 12px;
+        line-height: 1.4;
     }
 
     .service-text h3 {
@@ -479,16 +487,35 @@ body {
         width: 40%;
     }
 
+    .ps-text {
+    margin-left: 10px;
+}
+    
     .ps-text h3 {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .ps-text p {
         font-size: 12px;
+        line-height: 1.4;
+        
     }
 
     .ps-button {
-        font-size: 12px;
+        display: block;
+        width: fit-content;
+        font-size: 10px;
+        padding: 14px 30px;
     }
 }
 
+@media screen and (max-width: 250px) {
+    .service-text h3 {
+        font-size: 14px;
+    }
+
+    .ps-button {
+        font-size: 5px;
+        padding: 10px 14px;
+    }
+}
