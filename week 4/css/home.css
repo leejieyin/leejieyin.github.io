@@ -139,6 +139,10 @@ body {
 
     .hero {
         flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .hero-text {
+        margin-left: 0;
     }
 
 .company-logos img {
