@@ -108,3 +108,24 @@ body {
     color: #2973B2;
     text-decoration: underline;
 }
+
+.footer {
+    background-color: #9ACBD0;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-social-links img {
+    width: 25px;
+}
+
+.disclaimer {
+    font-size: 12px;
+    margin-bottom: 0;
+}
