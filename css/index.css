@@ -129,3 +129,27 @@ body {
     font-size: 12px;
     margin-bottom: 0;
 }
+
+@media (max-width: 540px) {
+
+    .exercise-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .week {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .week-four {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 280px) {
+    .profile h1 {
+        font-size: 24px;
+    }
+}
