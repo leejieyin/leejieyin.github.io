@@ -43,3 +43,61 @@ body {
     height: 120px;
     border-radius: 50%;
 }
+
+.exercise-list {
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.week {
+    background-color: rgba(255, 255, 255, 0.45);
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 32%;
+}
+
+.week-four {
+    width: 100%;
+    flex-basis:100%;
+}
+
+
+.week h2 {
+    color: #2973B2;
+    font-size: 22px;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #9ACBD0;
+    text-align: center;
+}
+
+.week h2 img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.week ul {
+    padding-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    text-align: center;
+    list-style: none;
+}
+
+.week li {
+    margin-bottom: 8px;
+}
+
+.week a {
+    color: #48A6A7;
+    text-decoration: none;
+}
+
+.week a:hover {
+    color: #2973B2;
+    text-decoration: underline;
+}
