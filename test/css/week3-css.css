@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Isometra&family=ZCOOL+XiaoWei&display=swap');
+
+body {
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h2 {
+
+    font-family: "Bitcount Ink", system-ui;
+
+}
+
+h1 {
+    font-family: "Isometra", system-ui;
+
+}
+
+p {
+    font-family: "Inter", system-ui;
+    font-weight: bold;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+    font-family: "ZCOOL XiaoWei", system-ui;
+    font-style: italic;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(53, 10, 153);
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+}

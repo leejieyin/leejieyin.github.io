@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* === ROOT VARIABLES === */
+:root {
+    --primary: #333333;
+    --secondary: #BDA16B;
+    --text-dark: #000000;
+    --text-light: #D3D3D3;
+    --bg-light: #f9f9f9;
+    --radius: 8px;
+    --font-base: "Inter", sans-serif;
+}
+
+/* === RESET / NORMALIZE === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.btn {
+    padding: var(--btn-padding);
+    background-color: var(--btn-background-color);
+    color: var(--color-text-light);
+    border: 1px solid var(--color-white);
+}
+
+.btn-black:hover {
+    background-color: var(--color-dark);
+}
+
+.btn-white:hover {
+    background-color: var(--color-white);
+    color: var(--color-text-dark);
+}
+
+.btn-outline:hover {
+    border: 1px solid var(--color-dark);
+}
+
+.btn-outline {
+    border: 1px solid var(--color-grey);
+}

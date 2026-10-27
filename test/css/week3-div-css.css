@@ -1,0 +1,28 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.box {
+    padding: 10px;
+    flex: 1;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    margin: auto;
+}
+
+.london {
+    background-color: #FFF4A3;
+}
+
+.oslo {
+    background-color: #FFC0C7;
+    /* This makes the Oslo box take up twice as much space as the other boxes */
+}
+
+.rome {
+    background-color: #D9EEE1;
+}

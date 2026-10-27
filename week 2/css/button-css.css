@@ -1,0 +1,59 @@
+body {
+    background-color: white;
+}
+
+button {
+    color: white;
+    border: none;
+    margin: 5px;
+    font-weight: bold
+}
+
+.request-now {
+    background-color: black;
+    padding: 10px 20px;
+    font-weight: normal
+}
+
+.sign-up {
+    background-color: #55a35a;
+    padding: 9px 22px;
+    border-radius: 5px;
+}
+
+.add-to-cart {
+    background-color: #f5d74d;
+    color: black;
+    padding: 8px 50px;
+    border-radius: 60px;
+    font-weight: normal
+}
+
+.get-started {
+    background-color: #7353ad;
+    padding: 9px 20px;
+    border-radius: 3px;
+}
+
+._download {
+    background-color: #ffffff;
+    color: #6c757d;
+    border: 0.5px solid #6c757d;
+    border-radius: 3px;
+    padding: 9px 20px;
+    margin: 2px;
+}
+
+.apply-on-company-website {
+    background-color: #2d65bb;
+    border-radius: 60px;
+    padding: 10px 23px;
+}
+
+._save {
+    background-color: #ffffff;
+    color: #2966bc;
+    border: #2966bc solid 1px;
+    border-radius: 60px;
+    padding: 8px 23px;
+}

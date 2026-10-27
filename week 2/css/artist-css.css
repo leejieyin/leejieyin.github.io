@@ -1,0 +1,31 @@
+body {
+    background-color: #F2EFE7;
+}
+
+h1,
+h2 {
+    color: #3368A0;
+}
+
+p {
+    font-size: 16px;
+    color: #66A3BF;
+    line-height: 1.5;
+}
+
+
+
+li {
+    color: #3368A0;
+    font-size: 17px;
+}
+
+button {
+    background-color: #C8DFDB;
+    color: #3368A0;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
