@@ -10,154 +10,150 @@
     --off-white: #F2F2F2;
     --white: #FFFFFF;
     --gold: #BDA16B;
-
-/* Typography */
-    --font-heading: "Bebas Neue", sans-serif;
-    --font-serif: "Lora", serif;
-    --font-base: "Work Sans", sans-serif;
-
-/* Button */
-    --btn-padding: 12px 20px;
-
-    /* Layout */
-    --radius: 0px;
 }
 
-
-/* === RESET / NORMALIZE === */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
-img {
-    max-width: 100%;
+body {
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 110px;
+    background-color: var(--black);
+}
+
+.header-container {
+    width: 100%;
+    height: 100%;
+    padding: 0 10% 0 1%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Logo */
+
+.header-logo img {
+    width: 210px;
+    height: auto;
     display: block;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* === GLOBAL TYPOGRAPHY === */
-body {
-    font-family: var(--font-base);
-    color: var(--black);
-    background-color: var(--white);
-    line-height: 1.6;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-heading);
-    font-weight: normal;
-    line-height: 1.2;
-}
-
-p {
-    font-family: var(--font-serif);
-    line-height: 1.6;
-}
-
-button {
-    font-family: var(--font-base);
-    cursor: pointer;
-}
-
-/* === LAYOUT COMPONENTS === */
-
-/* Main Container */
-.container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 10%;
-}
-
 /* Navigation */
-.site-header {
-    background-color: var(--dark-grey);
-    color: var(--white);
-}
 
-.nav {
+.header-nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 28px;
+    margin-left: auto;
 }
 
-.nav a {
-    color: var(--medium-grey);
-    font-family: var(--font-base);
+.header-nav a {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    color: var(--white);
+    text-decoration: none;
+    letter-spacing: 1.5px;
 }
 
-.nav a:hover {
+/* Navigation Hover */
+
+.header-nav a:hover {
     color: var(--gold);
 }
 
-/* Footer */
-.site-footer {
-    background-color: var(--black);
-    color: var(--white);
+/* Order Icon */
+.header-order {
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+}
+
+.header-order img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+/* COMMON FOOTER */
+.footer {
+    width: 100%;
+    height: 580px;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.75),
+                        rgba(0, 0, 0, 0.75)),
+        url("../images/footer img.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer Content */
+
+.footer-content {
+    width: 100%;
     text-align: center;
-    padding: 30px 0;
 }
 
-/* === REUSABLE COMPONENTS === */
+/* Footer Logo */
 
-/* General Button */
-.btn {
-    display: inline-block;
-    padding: var(--btn-padding);
-    font-family: var(--font-base);
-    font-size: 12px;
-    text-align: center;
-    text-decoration: none;
-    border: 1px solid var(--white);
-    cursor: pointer;
+.footer-logo img {
+    width: 210px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
-/* Black Button */
-.btn-black {
-    background-color: var(--black);
+/* Description */
+
+.footer-description {
+    font-family: 'Lora', serif;
+    font-size: 19px;
+    line-height: 33.3px;
     color: var(--white);
+
+    max-width: 700px;
+    margin: 0 auto 45px;
 }
 
-.btn-black:hover {
-    background-color: var(--dark-grey);
+/* Social Media */
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
-/* White Button */
-.btn-white {
+/* Social Icon Circle */
+
+.social-icon {
+    width: 62px;
+    height: 62px;
+
     background-color: var(--white);
-    color: var(--black);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.btn-white:hover {
-    background-color: var(--white);
-    color: var(--dark-grey);
-}
+/* Social Icon Image */
 
-/* Outline Button */
-.btn-outline {
-    background-color: transparent;
-    color: var(--black);
-    border: 1px solid var(--light-grey);
-}
-
-.btn-outline:hover {
-    border: 1px solid var(--dark-grey);
-}
-
-/* Gold Button */
-.btn-gold {
-    background-color: var(--gold);
-    color: var(--white);
-    border: 1px solid var(--gold);
-}
-
-.btn-gold:hover {
-    background-color: transparent;
-    color: var(--black);
+.social-icon img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
