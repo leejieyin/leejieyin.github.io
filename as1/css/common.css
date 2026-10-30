@@ -87,8 +87,15 @@ body {
     height: 580px;
 
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.75),
-                        rgba(0, 0, 0, 0.75)),
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.95) 15%,
+            rgba(0, 0, 0, 0.55) 45%,
+            rgba(0, 0, 0, 0.65) 65%,
+            rgba(0, 0, 0, 0.95) 90%,
+            rgba(0, 0, 0, 1) 100%
+        ),
         url("../images/footer img.png");
 
     background-size: cover;
@@ -138,7 +145,7 @@ body {
 
 /* Social Icon Circle */
 
-.social-icon {
+.fb, .x, .ins, .yt {
     width: 62px;
     height: 62px;
 
@@ -150,10 +157,24 @@ body {
     align-items: center;
 }
 
-/* Social Icon Image */
+/* Social Media Icons */
 
-.social-icon img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
+.fb img {
+    width: 17px;
+    height: 17px;
+}
+
+.x img {
+    width: 20px;
+    height: 20px;
+}
+
+.ins img {
+    width: 22px;
+    height: 22px;
+}
+
+.yt img {
+    width: 23px;
+    height: 23px;
 }
