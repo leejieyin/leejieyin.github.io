@@ -2,14 +2,27 @@
 
 /* === ROOT VARIABLES === */
 :root {
-    --nav-bar-background: #333333;
-    --hover-nav-bar: #BDA16B;
-    --Background: #000000;
-    --lora-italic-underline: #D3D3D3;
-    --Small-info-background: #F2F2F2;
-    --radius: 8px;
-    --font-base: "Inter", sans-serif;
+    /* Colors */
+    --black: #000000;
+    --dark-grey: #333333;
+    --medium-grey: #A1A1A1;
+    --light-grey: #D3D3D3;
+    --off-white: #F2F2F2;
+    --white: #FFFFFF;
+    --gold: #BDA16B;
+
+/* Typography */
+    --font-heading: "Bebas Neue", sans-serif;
+    --font-serif: "Lora", serif;
+    --font-base: "Work Sans", sans-serif;
+
+/* Button */
+    --btn-padding: 12px 20px;
+
+    /* Layout */
+    --radius: 0px;
 }
+
 
 /* === RESET / NORMALIZE === */
 * {
@@ -28,31 +41,123 @@ a {
     color: inherit;
 }
 
+/* === GLOBAL TYPOGRAPHY === */
 body {
+    font-family: var(--font-base);
+    color: var(--black);
+    background-color: var(--white);
     line-height: 1.6;
-    background-color: #f4f4f4;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+p {
+    font-family: var(--font-serif);
+    line-height: 1.6;
+}
+
+button {
+    font-family: var(--font-base);
+    cursor: pointer;
+}
+
+/* === LAYOUT COMPONENTS === */
+
+/* Main Container */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10%;
+}
+
+/* Navigation */
+.site-header {
+    background-color: var(--dark-grey);
+    color: var(--white);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav a {
+    color: var(--medium-grey);
+    font-family: var(--font-base);
+}
+
+.nav a:hover {
+    color: var(--gold);
+}
+
+/* Footer */
+.site-footer {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* === REUSABLE COMPONENTS === */
+
+/* General Button */
 .btn {
+    display: inline-block;
     padding: var(--btn-padding);
-    background-color: var(--btn-background-color);
-    color: var(--color-text-light);
-    border: 1px solid var(--color-white);
+    font-family: var(--font-base);
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid var(--white);
+    cursor: pointer;
+}
+
+/* Black Button */
+.btn-black {
+    background-color: var(--black);
+    color: var(--white);
 }
 
 .btn-black:hover {
-    background-color: var(--color-dark);
+    background-color: var(--dark-grey);
+}
+
+/* White Button */
+.btn-white {
+    background-color: var(--white);
+    color: var(--black);
 }
 
 .btn-white:hover {
-    background-color: var(--color-white);
-    color: var(--color-text-dark);
+    background-color: var(--white);
+    color: var(--dark-grey);
+}
+
+/* Outline Button */
+.btn-outline {
+    background-color: transparent;
+    color: var(--black);
+    border: 1px solid var(--light-grey);
 }
 
 .btn-outline:hover {
-    border: 1px solid var(--color-dark);
+    border: 1px solid var(--dark-grey);
 }
 
-.btn-outline {
-    border: 1px solid var(--color-grey);
+/* Gold Button */
+.btn-gold {
+    background-color: var(--gold);
+    color: var(--white);
+    border: 1px solid var(--gold);
+}
+
+.btn-gold:hover {
+    background-color: transparent;
+    color: var(--black);
 }
