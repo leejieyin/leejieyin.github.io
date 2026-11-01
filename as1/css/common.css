@@ -331,3 +331,47 @@ p {
     width: 23px;
     height: 23px;
 }
+
+/* Hamburger Icon */
+.header-hamburger {
+    display: none;
+}
+
+.header-hamburger img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+/* Tablet Header */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+
+    .header {
+        position: relative;
+        height: 70px;
+        background-color: var(--black);
+    }
+
+    .header-container {
+        padding: 0 8%;
+    }
+
+    .header-logo img {
+        width: 130px;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .header-order {
+        display: none;
+    }
+
+    .header-hamburger {
+        display: block;
+        margin-left: auto;
+    }
+
+}

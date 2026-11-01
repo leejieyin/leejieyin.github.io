@@ -15,14 +15,13 @@
 }
 
 /*Hero Content*/
-
 .hero-content {
-     width: 40%;
+    width: 46%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 0 0 9.5%;
-    color: var(--white);
+    color: var(--white); 
 }
 
 /*Subtitle*/
@@ -32,13 +31,11 @@
 }
 
 /*Main Heading*/
-
 .hero-content h1 {
     margin: 0 0 45px;
 }
 
 /* Description */
-
 .hero-description {
     max-width: 450px;
     color: var(--white);
@@ -46,7 +43,6 @@
 }
 
 /*Hero Image*/
-
 .hero-image {
     width: 54%;
 }
@@ -59,7 +55,6 @@
 }
 
 /*POPULAR SECTION*/
-
 .popular-section {
     width: 100%;
     background-color: var(--white);
@@ -70,27 +65,23 @@
 
 
 /*SECTION HEADING*/
-
 .popular-heading {
     text-align: center;
     margin-bottom: 50px;
 }
 
 /* Section Title */
-
 .popular-heading .section-title {
-    margin: 0 0 20px;
+    margin: 10px 0 20px;
 }
 
 /* Popular Title */
-
 .popular-heading h2 {
-    margin: 0 0 15px;
+    margin: 50px 0 15px;
     text-align: center;
 }
 
 /* Description */
-
 .popular-description {
     max-width: 760px;
     margin: 0 auto;
@@ -99,7 +90,6 @@
 
 
 /*POPULAR ITEMS GRID*/
-
 .popular-items {
     display: grid;
     grid-template-columns: 1fr 1.6fr 1fr;
@@ -111,7 +101,6 @@
 
 
 /*INDIVIDUAL ITEM*/
-
 .popular-item {
     display: flex;
     flex-direction: column;
@@ -122,54 +111,47 @@
 
 
 /* Images */
-
 .popular-item img {
     display: block;
     width: 100%;
     aspect-ratio: 0.88 / 1;
     object-fit: cover;
 }
-
+.tablet_img {
+    display: none;
+}
 
 /*POPULAR ITEM TITLE*/
-
 .popular-item h3,
 .popular-item h4 {
     width: 100%;
     text-align: center;
-    margin: 15px 0;
+    margin: 20px 0 20px;
 }
 
 
 /*POPULAR BUTTON*/
-
 .popular-item .btn {
     margin-top: 0;
     flex-shrink: 0;
 }
 
 /*ATMOSPHERE SECTION*/
-
 .atmosphere-section {
     width: 100%;
     min-height: 1270px;
-
     background-image: url("../images/Dining_Table.jpg");
-
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     display: flex;
     align-items: flex-start;
-
     padding: 160px 9.5%;
     box-sizing: border-box;
 }
 
 
 /* ATMOSPHERE CONTENT */
-
 .atmosphere-content {
     max-width: 520px;
     color: var(--white);
@@ -177,7 +159,109 @@
 
 
 /* ATMOSPHERE DESCRIPTION */
-
 .atmosphere-content p {
     margin: 35px 0 0;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1540px) {
+
+    .hero-content {
+        width: 48%;
+        padding-left: 8%;
+    }
+
+    .hero-image {
+        width: 52%;
+    }
+
+}
+
+/* Tablet Hero */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+
+    .hero-header {
+        position: relative;
+        top: auto;
+        left: auto;
+        background-color: var(--black);
+    }
+
+    .hero {
+        min-height: auto;
+        flex-direction: column-reverse;
+        background-color: var(--black);
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 50px 20% 60px;
+        background-color: var(--black);
+        color: var(--white);
+    }
+
+    .hero-subtitle {
+        margin-bottom: 25px;
+    }
+
+    .hero-content h1 {
+        margin-bottom: 25px;
+    }
+
+    .hero-description {
+        max-width: 450px;
+        color: var(--white);
+    }
+
+    .popular-description .desktop-break {
+        display: none;
+    }
+
+    /* Popular Description */
+    .popular-description {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* Popular Items */
+    .popular-items {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    /* Individual Item */
+    .popular-item {
+        width: 100%;
+    }
+
+    /* Popular Images */
+.popular-item .desktop_img {
+    display: none;
+}
+
+.popular-item .tablet_img {
+    display: block;
+    width: 160%;
+    height: 600px;
+    object-fit: cover;
+}
+
+/* Chef Specials First */
+.popular-item-featured {
+    order: -1;
+}
+
 }
