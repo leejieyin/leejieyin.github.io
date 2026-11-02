@@ -75,6 +75,10 @@
     margin: 10px 0 20px;
 }
 
+.popular-heading .section-title span {
+    display: inline;
+}
+
 /* Popular Title */
 .popular-heading h2 {
     margin: 50px 0 15px;
@@ -230,10 +234,6 @@
         color: var(--white);
     }
 
-    .popular-description .desktop-break {
-        display: none;
-    }
-
     /* Popular Description */
     .popular-description {
         max-width: 600px;
@@ -256,41 +256,168 @@
     }
 
     /* Tablet Images */
-.popular-item .desktop_img {
+    .popular-item .desktop_img {
     display: none;
-}
+    }
 
-.popular-item .tablet_img {
+    .popular-item .tablet_img {
     display: block;
     width: 160%;
     height: 600px;
     object-fit: cover;
-}
+    }
 
-/* Chef Specials First */
-.popular-item-featured {
+    /* Chef Specials First */
+    .popular-item-featured {
     order: -1;
-}
+    }
 
-.popular-item-featured h3 {
+    .popular-item-featured h3 {
     font-size: 30px;
     line-height: 36px;
-}
+    }
 
-/*Popular Description */
-.popular-description {
+    /*Popular Description */
+    .popular-description {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
-}
+    }
 
-.popular-description .desktop {
+    .popular-description .desktop {
     display: none;
-}
+    }
 
-.atmosphere-section {
+    .atmosphere-section {
         background-image: url("../images/tab_diningtable.png");
         min-height: 650px;
         background-position: center;
+    }
+
+    
+}
+
+/* Mobile Hero */
+@media screen and (max-width: 640px) {
+
+    .hero-header {
+        position: relative;
+        background-color: var(--black);
+    }
+
+    .hero {
+        min-height: auto;
+        flex-direction: column-reverse;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 40px 10% 50px;
+        background-color: var(--black);
+    }
+
+    .hero-subtitle {
+        margin-bottom: 20px;
+    }
+
+    .hero-content h1 {
+        margin-bottom: 25px;
+    }
+
+    .hero-description {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    /* Mobile Popular */
+    .popular-section {
+    padding: 60px 0 80px;
+    }
+
+    .popular-heading {
+    margin-bottom: 50px;
+    }
+
+    .popular-heading .section-title {
+    max-width: 150px;
+    margin: 0 auto 50px;
+    }
+
+    .popular-heading h2 {
+    margin: 0 0 20px;
+    }
+
+    .popular-description {
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    }
+
+    /* Popular Items */
+    .popular-items {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+    margin: 0 auto;
+    }
+
+    .popular-item {
+    width: 100%;
+    }
+
+    .popular-item .desktop_img {
+    display: none;
+    }
+
+    .popular-item .tablet_img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    }
+
+    .popular-item-featured {
+    order: -1;
+    }
+
+    .popular-heading .section-title span {
+    display: block;
+    }
+
+    .popular-heading .section-title .title-dot {
+    display: none;
+    }
+
+    .popular-description .desktop {
+    display: none;
+    }
+
+    .atmosphere-section {
+    min-height: auto;
+    padding: 0 5% 80px;
+    background-size: 100% auto;
+    background-position: top center;
+    background-color: var(--black);
+    }
+
+    .atmosphere-content {
+    max-width: 100%;
+    padding-top: 300px;
+    text-align: center;
+    }
+
+    .atmosphere-content p {
+    margin-top: 25px;
     }
 }
