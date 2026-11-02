@@ -110,14 +110,12 @@
 }
 
 
-/* Images */
-.popular-item img {
+/* Desktop Images */
+.popular-item .desktop_img {
     display: block;
-    width: 100%;
-    aspect-ratio: 0.88 / 1;
-    object-fit: cover;
 }
-.tablet_img {
+
+.popular-item .tablet_img {
     display: none;
 }
 
@@ -247,7 +245,7 @@
         width: 100%;
     }
 
-    /* Popular Images */
+    /* Tablet Images */
 .popular-item .desktop_img {
     display: none;
 }
@@ -264,4 +262,25 @@
     order: -1;
 }
 
+.popular-item-featured h3 {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+/*Popular Description */
+.popular-description {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.popular-description .desktop {
+    display: none;
+}
+
+.atmosphere-section {
+        background-image: url("../images/tab_diningtable.png");
+        min-height: 650px;
+        background-position: center;
+    }
 }
