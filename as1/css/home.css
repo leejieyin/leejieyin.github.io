@@ -256,40 +256,34 @@
 
     /* Tablet Images */
     .popular-item .desktop_img {
-    display: none;
+        display: none;
     }
+    
 
     .popular-item .tablet_img {
-    display: block;
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 
     .popular-section {
-    padding-left: 0;
-    padding-right: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     /* Chef Specials First */
     .popular-item-featured {
-    order: -1;
+        order: -1;
     }
 
     .popular-item-featured h3 {
-    font-size: 30px;
-    line-height: 36px;
-    }
-
-    /*Popular Description */
-    .popular-description {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
+        font-size: 30px;
+        line-height: 36px;
     }
 
     .popular-description .desktop {
-    display: none;
+        display: none;
     }
 
     .atmosphere-section {
@@ -353,7 +347,6 @@
     }
 
     .popular-heading .section-title {
-    max-width: 150px;
     margin: 0 auto 50px;
     }
 

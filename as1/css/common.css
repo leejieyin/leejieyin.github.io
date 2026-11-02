@@ -144,11 +144,6 @@ p {
         line-height: 18px;
     }
 
-    .btn {
-        font-size: 15px;
-        line-height: 18px;
-    }
-
 }
 
 /* BUTTON BASE*/
@@ -332,11 +327,10 @@ p {
 /* Description */
 
 .footer-description {
-    font-family: var(--font-lora);
-    font-size: var(--paragraph-size);
-    line-height: var(--paragraph-line-height);
+    font-family: 'Lora', serif;
+    font-size: 19px;
+    line-height: 33.3px;
     color: var(--white);
-
     max-width: 700px;
     margin: 0 auto 45px;
 }
