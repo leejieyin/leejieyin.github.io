@@ -45,7 +45,6 @@
 .order-subtitle p {
     color: var(--text-white);
     font-family: var(--font-base);
-    font-size: 15px;
     margin: 0;
     letter-spacing: 1px;
 }
@@ -57,14 +56,12 @@
 
 /* Choose Your Favourites Section */
 .choose-favourites {
-    width: 100%;
-    padding: 70px 7%;
+    padding: 70px;
 }
 
 .choose-content {
     max-width: 1080px;
     margin: 0 auto;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,12 +75,8 @@
     margin: 0 0 15px;
 }
 
-.choose-text h2 {
-    margin: 0 0 25px;
-}
-
-.choose-text p {
-    margin: 0;
+.choose-text h3 {
+    margin: 15px 0 20px;
 }
 
 .choose-cart {
@@ -94,4 +87,132 @@
 .view-cart-btn {
     width: 166px;
     height: 47px;
+}
+
+/* Fine Dining Favorites Section */
+.fine-dining {
+    width: 100%;
+    padding: 80px 7%;
+    background-color: var(--bg-black);
+}
+
+.fine-dining-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Heading */
+.fine-dining-heading {
+    margin-bottom: 30px;
+}
+
+.fine-dining-heading .subtitle {
+    color: var(--text-white);
+    margin: 0 0 15px;
+}
+
+.fine-dining-heading h4 {
+    color: var(--text-white);
+    margin: 0;
+}
+
+/* Dish Items */
+.dish-items {
+    display: flex;
+    gap: 30px;
+}
+
+.dish-card {
+    width: 50%;
+    background-color: var(--bg-dark-grey);
+}
+
+/* Dish Images */
+.dish-image img {
+    width: 100%;
+    height: 530px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Dish Information */
+.dish-info {
+    padding: 35px;
+}
+
+.dish-category {
+    color: var(--text-white);
+    font-family: var(--font-base);
+    margin: 0 0 15px;
+}
+
+.dish-info h4 {
+    color: var(--text-white);
+    margin: 0 0 20px;
+}
+
+.dish-description {
+    color: var(--text-white);
+    margin: 0 0 12px;
+}
+
+.dish-price {
+    color: var(--color-primary);
+    font-family: var(--font-base);
+    font-size: 15px;
+    margin: 0 0 25px;
+}
+
+/* Dish Actions */
+.dish-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Quantity Control */
+.quantity-control {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--grey-light);
+    height: 46px;
+    width: 150px;
+    flex-shrink: 0;
+}
+
+.quantity-control button,
+.quantity-control span {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    color: var(--text-white);
+    border: none;
+    font-size: 16px;
+}
+
+.quantity-control button {
+    font-family: var(--font-base);
+}
+
+.quantity-control span {
+    font-family: var(--font-paragraph);
+    border-left: 1px solid var(--grey-light);
+    border-right: 1px solid var(--grey-light);
+}
+
+/* Add to Cart Button */
+.dish-add-btn {
+    width: 180px;
+    height: 46px;
+    flex-shrink: 0;
+}
+
+/* View Cart Button */
+.dish-view-btn {
+    width: 180px;
+    height: 46px;
+    flex-shrink: 0;
 }

@@ -17,21 +17,32 @@
     --grey-light: #D3D3D3;
     --off-white: #F2F2F2; 
 
+    --color-primary: #BDA16B;
+
+    /* Button Colors */
+    --btn-bg-black: #000000;
+    --btn-bg-white: #FFFFFF;
+    --btn-bg-transparent: transparent;
+    --btn-bg-gold: #BDA16B;
+
+    --btn-text-black: #000000;
+    --btn-text-white: #FFFFFF;
+    --btn-text-dark-grey: #333333;
+
     --btn-border-black: #000000;
     --btn-border-white: #FFFFFF;
     --btn-border-grey: #A1A1A1;
+    --btn-border-gold: #BDA16B;
 
-    --color-primary: #BDA16B;
+    /* Button Settings*/
+    --btn-padding: 0;
+    --transition: 0.3s ease;
 
     /* Fonts */
     --font-base: "Work Sans", sans-serif;
     --font-heading: "Bebas Neue", sans-serif;
     --font-paragraph: "Lora", serif;
     --font-italic: "Lora", serif;
-
-    /* Button */
-    --btn-padding: 0;
-    --transition: 0.3s ease;
 }
 
 /* === GLOBAL SETTINGS === */
@@ -167,47 +178,54 @@ p,
     transition: all var(--transition);
 }
 
-/* Button Black & White */
-
-.btn-black,
-.btn-white {
-    background-color: var(--bg-black);
-    color: var(--text-white);
+/* Button Black*/
+.btn-black {
+    background-color: transparent;
+    color: var(--btn-text-white);
     border: 1px solid var(--btn-border-white);
 }
 
 .btn-black:hover {
-    background-color: var(--bg-dark-grey);
+    background-color: var(--btn-bg-black);
+}
+
+/* Button White */
+
+.btn-white {
+    background-color: var(--btn-bg-black);
+    color: var(--btn-text-white);
+    border: 1px solid var(--btn-border-white);
 }
 
 .btn-white:hover {
-    background-color: var(--bg-white);
-    color: var(--text-black);
+    background-color: var(--btn-bg-white);
+    color: var(--btn-text-black);
+    border: 2px solid var(--btn-border-black);
 }
 
 /* Button Outline */
 
 .btn-outline {
     background-color: transparent;
-    color: var(--text-dark-grey);
-    border: 1px solid var(--grey-light);
+    color: var(--btn-text-dark-grey);
+    border: 1px solid var(--btn-border-grey);
 }
 
 .btn-outline:hover {
-    border-color: var(--text-black);
+    border-color: var(--btn-border-black);
 }
 
 /* Button Gold */
 
 .btn-gold {
-    background-color: var(--color-primary);
-    color: var(--text-white);
-    border: 1px solid var(--color-primary);
+    background-color: var(--btn-bg-gold);
+    color: var(--btn-text-white);
+    border: 1px solid var(--btn-border-gold);
 }
 
 .btn-gold:hover {
-    background-color: transparent;
-    color: var(--text-dark-grey);
+    background-color: var(--btn-bg-white);
+    color: var(--btn-text-dark-grey);
 }
 
 /* === HEADER === */
