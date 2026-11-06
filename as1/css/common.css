@@ -15,6 +15,7 @@
 
     --grey: #A1A1A1;
     --grey-light: #D3D3D3;
+    --off-white: #F2F2F2; 
 
     --btn-border-black: #000000;
     --btn-border-white: #FFFFFF;
@@ -108,7 +109,7 @@ p,
     font-weight: 400;
 }
 
-.eyebrow {
+.subtitle {
     font-family: var(--font-base);
     font-size: 15px;
     line-height: 18px;
@@ -251,13 +252,13 @@ p,
     font-family: var(--font-base);
     font-size: 15px;
     font-weight: 200;
-    color: var(--text-white);
+    color: var(--grey-light);
     text-decoration: none;
     letter-spacing: 1.5px;
 }
 
 .header-nav a:hover {
-    color: var(--color-primary);
+    color: var(--text-white);
 }
 
 /* Order Icon */
@@ -376,6 +377,30 @@ p,
     width: 23px;
     height: 23px;
 }
+
+/* Social Media Hover */
+
+.fb,
+.x,
+.ins,
+.yt {
+    transition: background-color var(--transition);
+}
+
+.fb:hover,
+.x:hover,
+.ins:hover,
+.yt:hover {
+    background-color: var(--bg-black);
+}
+
+.fb:hover img,
+.x:hover img,
+.ins:hover img,
+.yt:hover img {
+    filter: brightness(0) invert(1);
+}
+
 
 /* === RESPONSIVE HEADER === */
 
