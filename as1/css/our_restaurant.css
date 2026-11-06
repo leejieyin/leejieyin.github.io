@@ -95,7 +95,6 @@
     width: 100%;
 }
 
-
 /* === GALLERY SECTION === */
 
 .gallery-section {
@@ -127,8 +126,9 @@
     width: 100%;
     height: auto;
 }
-
-
+.gallery-image .tablet-gallery {
+    display: none;
+}
 
 /* === TESTIMONIALS SECTION === */
 
@@ -195,6 +195,111 @@
     display: block;
 }
 
+/* === TABLET === */
 
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+
+    /* Hero Section */
+
+    .hero {
+        width: 100%;
+        min-height: 735px;
+        justify-content: center;
+        background-image: url("../images/tab_seasoning_jars.jpg");
+    }
+
+    /* Hide Desktop Hero Image */
+
+    .hero-image {
+        display: none;
+    }
+
+    /* Hero Content */
+
+    .hero-content {
+        width: 100%;
+        padding: 0 12.5%;
+        color: var(--text-white);
+    }
+
+    /* Elegance Section */
+
+    .elegance-section {
+        padding: 80px 0 80px;
+    }
+
+    /* Elegance Images */
+    .elegance-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 65px;
+        width: 80%;
+        max-width: 550px;
+        margin: 0 auto;
+    }
+
+    /* Individual Images */
+    .elegance-item {
+        width: 90%;
+    }
+
+    .elegance-item img {
+        aspect-ratio: 1 / 1;
+        object-position: center;
+    }
+
+    /* Gallery Section */
+    .gallery-heading {
+    padding: 40px 5% 25px;
+    }
+
+    /* Tablet Gallery Image */
+    .gallery-image {
+    width: 84%;
+    margin: 0 auto;
+    }
+
+    .gallery-image .desktop-gallery {
+    display: none;
+    }
+
+    .gallery-image .tablet-gallery {
+    display: block;
+    width: 100%;
+    height: auto;
+    }
+
+        /* Testimonials Section */
+
+    .testimonials-section {
+        padding: 80px 7% 100px;
+    }
+
+    /* Testimonial Items */
+
+    .testimonial-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 90px;
+    }
+
+    /* Testimonial Card */
+
+    .testimonial-card {
+        width: 90%;
+        padding: 80px 40px;
+    }
+
+    /* Customer Name */
+    .testimonial-card h4 {
+    margin: 0 0 70px;
+    }
+
+    /* Review Text */
+    .testimonial-card p {
+    margin: 0 0 70px;
+    }
+}
 
 
