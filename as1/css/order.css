@@ -1,0 +1,97 @@
+/* Header Overlay */
+.header.hero-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: transparent;
+}
+
+/* Hero Section */
+.order-hero {
+    width: 100%;
+    min-height: 805px;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
+    ), url("../images/order_cover.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-hero-content {
+    text-align: center;
+    color: var(--text-white);
+}
+
+.order-hero-content h1 {
+    color: var(--text-white);
+    margin: 15px 0 0;
+}
+
+.order-subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.order-subtitle p {
+    color: var(--text-white);
+    font-family: var(--font-base);
+    font-size: 15px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.subtitle-line {
+    width: 75px;
+    border-top: 1px solid var(--text-white);
+}
+
+/* Choose Your Favourites Section */
+.choose-favourites {
+    width: 100%;
+    padding: 70px 7%;
+}
+
+.choose-content {
+    max-width: 1080px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.choose-text {
+    max-width: 550px;
+}
+
+.choose-text .subtitle {
+    margin: 0 0 15px;
+}
+
+.choose-text h2 {
+    margin: 0 0 25px;
+}
+
+.choose-text p {
+    margin: 0;
+}
+
+.choose-cart {
+    display: flex;
+    align-items: center;
+}
+
+.view-cart-btn {
+    width: 166px;
+    height: 47px;
+}
