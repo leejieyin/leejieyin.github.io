@@ -126,7 +126,8 @@
     width: 100%;
     height: auto;
 }
-.gallery-image .tablet-gallery {
+.gallery-image .tablet-gallery,
+.gallery-image .mobile-gallery {
     display: none;
 }
 
@@ -302,4 +303,149 @@
     }
 }
 
+/* === MOBILE === */
 
+@media screen and (max-width: 640px) {
+
+    /* Hero Section */
+
+    .hero {
+        width: 100%;
+        min-height: 545px;
+        justify-content: center;
+        background-image: url("../images/tab_seasoning_jars.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* Hide Desktop Hero Image */
+
+    .hero-image {
+        display: none;
+    }
+
+    /* Hero Content */
+
+    .hero-content {
+        width: 100%;
+        padding: 45px 6.5%;
+        color: var(--text-white);
+    }
+
+    /* Subtitle */
+
+    .hero-subtitle {
+        margin-bottom: 20px;
+    }
+
+    /* Main Heading */
+
+    .hero-content h1 {
+        margin-bottom: 45px;
+    }
+
+        /* Elegance Section */
+
+    .elegance-section {
+        padding: 55px 0 60px;
+    }
+
+    /* Section Heading */
+
+    .elegance-section h2 {
+        max-width: 65%;
+        margin: 0 auto 30px;
+    }
+
+    /* Elegance Images */
+
+    .elegance-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Individual Images */
+
+    .elegance-item {
+        width: 66%;
+    }
+
+    .elegance-item img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: auto;
+        object-fit: cover;
+    }
+
+    /* Gallery Section */
+    .gallery-heading {
+    padding: 40px 5% 25px;
+    }
+
+    /* Mobile Gallery Image */
+    .gallery-image {
+    width: 100%;
+    }
+
+    .gallery-image .desktop-gallery,
+    .gallery-image .tablet-gallery {
+    display: none;
+    }
+
+    .gallery-image .mobile-gallery {
+    display: block;
+    width: 100%;
+    height: auto;
+    }
+
+        /* Testimonials Section */
+
+    .testimonials-section {
+        padding: 45px 0 40px;
+    }
+
+    /* Section Heading */
+
+    .testimonials-section h2 {
+        max-width: 85%;
+        margin: 0 auto 30px;
+    }
+
+    /* Testimonial Items */
+
+    .testimonial-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 37px;
+    }
+
+    /* Testimonial Card */
+
+    .testimonial-card {
+        width: 85%;
+        padding: 50px 20px;
+    }
+
+    /* Customer Name */
+
+    .testimonial-card h4 {
+        margin: 0 0 40px;
+    }
+
+    /* Review Text */
+
+    .testimonial-card p {
+        margin: 10px 20px 30px;
+    }
+
+    /* Rating Stars */
+
+    .testimonial-stars img {
+        width: 270px;
+    }
+
+}    

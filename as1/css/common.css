@@ -85,7 +85,6 @@ h5 {
 .section-title,
 .menu-title {
     font-family: var(--font-italic);
-    font-weight: 400;
     font-style: italic;
 }
 
@@ -106,14 +105,12 @@ p,
     font-family: var(--font-paragraph);
     font-size: 19px;
     line-height: 33.3px;
-    font-weight: 400;
 }
 
 .subtitle {
     font-family: var(--font-base);
     font-size: 15px;
     line-height: 18px;
-    font-weight: 400;
     letter-spacing: 1.4px;
 }
 
@@ -332,7 +329,7 @@ p,
 .footer-description {
     color: var(--text-white);
     max-width: 700px;
-    margin: 0 auto 45px;
+    margin: 10px auto 35px;
 }
 
 /* Social Media */
@@ -462,6 +459,26 @@ p,
 
     .header-logo img {
         width: 180px;
+    }
+
+}
+
+/* Tablet Footer */
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+
+    .footer-description {
+        padding: 0 7%;
+    }
+
+}
+
+/* Mobile Footer */
+
+@media screen and (max-width: 640px) {
+
+    .footer-description {
+        padding: 0 5%;
     }
 
 }
