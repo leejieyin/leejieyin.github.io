@@ -103,8 +103,6 @@
 }
 
 .culinary-image {
-    flex: 1;
-    min-width: 0;
     height: 590px;
 }
 
@@ -112,7 +110,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
 }
 
 /* Description */
@@ -123,11 +120,116 @@
     text-align: center;
 }
 
-/* Adjust Ham Salad Image */
-.culinary-image:nth-child(2) img {
-    width: 111%;
-    max-width: none;
+/* OUR COMMITMENT */
+
+.commitment-section {
+    width: 100%;
+    display: flex;
+    background-color: var(--bg-black);
+    height: 840px;
+}
+
+/* Text Content */
+.commitment-content {
+    width: 35.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5.3%;
+}
+
+.commitment-text {
+    width: 100%;
+}
+
+.commitment-text h1 {
+    color: var(--text-white);
+    margin-bottom: 55px;
+}
+
+.commitment-text p {
+    color: var(--text-white);
+    margin: 0;
+}
+
+/* Images */
+.commitment-image {
+    overflow: hidden;
+}
+
+.commitment-image:nth-child(2) {
+    width: 35.9%;
+}
+
+.commitment-image:nth-child(3) {
+    width: 28.6%;
+}
+
+.commitment-image img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    display: block;
+}
+
+/* OUR ACHIEVEMENTS */
+
+.achievement-section {
+    width: 100%;
+    min-height: 900px;
+    background-image: url("../images/achievement_background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 90px 5%;
+    text-align: center;
+}
+
+/* Heading */
+
+.achievement-heading h1 {
+    color: var(--text-white);
+    margin: 0 0 50px;
+}
+
+.achievement-heading p {
+    color: var(--text-white);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Award Items */
+
+.achievement-awards {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 45px;
+}
+
+.achievement-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.achievement-item h2 {
+    color: var(--text-white);
+    margin: 0 0 25px;
+}
+
+.achievement-item span {
+    width: 85px;
+    height: 1px;
+    background-color: var(--grey-light);
+    margin-bottom: 45px;
+}
+
+.achievement-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    display: block;
 }
