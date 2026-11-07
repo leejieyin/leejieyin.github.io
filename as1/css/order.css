@@ -4,7 +4,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;
     background: transparent;
 }
 
@@ -182,7 +181,7 @@
 
 .quantity-control button,
 .quantity-control span {
-    width: 50px;
+    flex: 1;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -215,4 +214,76 @@
     width: 180px;
     height: 46px;
     flex-shrink: 0;
+}
+
+/* House Favourite Section */
+.house-favourite {
+    padding: 90px 8%;
+}
+
+.house-favourite-content {
+    max-width: 1370px;
+    min-height: 548px;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* Favourite Image */
+.favourite-image {
+    width: 45%;
+}
+
+.favourite-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Favourite Information */
+.favourite-info {
+    width: 55%;
+    padding: 110px 10%;
+    background-color: var(--bg-black);
+    color: var(--text-white);
+}
+
+.favourite-info .dish-category {
+    margin: 0 0 10px;
+}
+
+.favourite-info h3 {
+    color: var(--text-white);
+    margin: 0 0 75px;
+}
+
+.favourite-description {
+    color: var(--text-white);
+    margin: 0 0 30px;
+}
+
+/* Favourite Actions */
+.favourite-actions {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+/* Add to Cart Button */
+.pork-add-btn {
+    width: 188px;
+    height: 64px;
+    flex-shrink: 0;
+}
+
+.favourite-actions .quantity-control {
+    width: 180px;
+    height: 64px;
+}
+
+.favourite-actions .quantity-control button,
+.favourite-actions .quantity-control span {
+    flex: 1;
+    padding: 0;
+    box-sizing: border-box;
 }
