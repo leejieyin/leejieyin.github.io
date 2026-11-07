@@ -287,3 +287,120 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Signature Dishes Section */
+.signature-dishes {
+    width: 100%;
+    padding: 80px 7%;
+    background-color: var(--bg-black);
+}
+
+.signature-content {
+    max-width: 1370px;
+    margin: 0 auto;
+}
+
+/* Section Heading */
+.signature-heading {
+    margin-bottom: 35px;
+}
+
+.signature-heading .subtitle {
+    color: var(--text-white);
+    margin: 0 0 15px;
+}
+
+.signature-heading h4 {
+    color: var(--text-white);
+    margin: 0;
+}
+
+/* Signature Dish Cards */
+.signature-items {
+    display: flex;
+    gap: 24px;
+}
+
+.signature-card {
+    flex: 1;
+    background-color: var(--bg-dark-grey);
+}
+
+/* Dish Images */
+.signature-image img {
+    width: 100%;
+    height: 304px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Dish Information */
+.signature-info {
+    padding: 35px 25px 40px;
+}
+
+.signature-info h4 {
+    color: var(--text-white);
+    margin: 0 0 20px;
+}
+
+.signature-description {
+    color: var(--text-white);
+    margin: 0 0 12px;
+}
+
+.signature-price {
+    color: var(--color-primary);
+    font-family: var(--font-base);
+    font-size: 15px;
+    margin: 0 0 12px;
+}
+
+/* Signature Actions */
+.signature-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Quantity Control */
+.signature-quantity {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 49px;
+    border: 1px solid var(--grey-light);
+}
+
+.signature-quantity button {
+    width: 20%;
+    height: 100%;
+    padding: 0;
+    background: transparent;
+    color: var(--text-white);
+    border: none;
+    font-family: var(--font-base);
+    font-size: 16px;
+}
+
+.signature-quantity span {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    color: var(--text-white);
+    font-family: var(--font-paragraph);
+    font-size: 16px;
+    border-left: 1px solid var(--grey-light);
+    border-right: 1px solid var(--grey-light);
+}
+
+/* Action Buttons */
+.signature-add-btn,
+.signature-view-btn {
+    width: 100%;
+    height: 49px;
+    flex-shrink: 0;
+}
