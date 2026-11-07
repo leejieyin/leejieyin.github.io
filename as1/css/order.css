@@ -404,3 +404,37 @@
     height: 49px;
     flex-shrink: 0;
 }
+
+/* Review Your Cart Section */
+.review-cart {
+    width: 100%;
+    padding: 80px 7%;
+    background-color: var(--bg-black);
+}
+
+.review-cart-content {
+    text-align: center;
+}
+
+/* Section Heading */
+.review-cart .subtitle {
+    color: var(--text-white);
+    margin: 0 0 15px;
+}
+
+.review-cart h4 {
+    color: var(--text-white);
+    margin: 0;
+}
+
+/* Description */
+.review-description {
+    color: var(--text-white);
+    margin: 30px 0 35px;
+}
+
+/* Checkout Button */
+.checkout-btn {
+    width: 258px;
+    height: 53px;
+}
