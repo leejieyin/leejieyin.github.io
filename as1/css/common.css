@@ -120,6 +120,7 @@ p,
 
 .subtitle {
     font-family: var(--font-base);
+    color: var(--text-white);
     font-size: 15px;
     line-height: 18px;
     letter-spacing: 1.4px;
