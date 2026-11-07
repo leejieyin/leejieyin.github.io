@@ -408,3 +408,86 @@
         height: 180px;
     }
 }
+
+/* SMALL TABLET / LARGE MOBILE */
+@media screen and (min-width: 641px) and (max-width: 700px) {
+
+    .culinary-title h1 {
+        font-size: 80px;
+    }
+
+    .commitment-text h1 {
+        font-size: 90px;
+    }
+
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 640px) {
+    /* ABOUT US HERO */
+
+    .about-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: auto;
+        object-fit: initial;
+    }
+
+    .about-content {
+        width: 100%;
+        min-height: 580px;
+        box-sizing: border-box;
+        padding: 70px 8% 90px;
+        align-items: flex-start;
+    }
+
+    .about-title {
+        width: 100%;
+    }
+
+    .about-description {
+        max-width: 100%;
+    }
+
+    /* CULINARY PHILOSOPHY */
+
+    /* Hide Salad Image */
+    .culinary-image:nth-child(2) {
+        display: none;
+    }
+
+    /* Title */
+    .culinary-title h1 {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    /* Food Image */
+    .culinary-image {
+        height: auto;
+    }
+
+    .culinary-image img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* Description */
+    .culinary-description {
+        max-width: 610px;
+        padding: 20px 5% 20px;
+        text-align: center;
+    }
+
+    /* OUR COMMITMENT */
+    .commitment-section {
+    background-image: url("../images/mob_party.png");
+    height: 490px;
+    }
+}
+
