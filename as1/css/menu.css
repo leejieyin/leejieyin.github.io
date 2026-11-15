@@ -230,7 +230,7 @@
 
 /* Description */
 
-.cocktail-content p:not(.subtitle) {
+.cocktail-content .cocktail-description {
     color: var(--text-white);
     margin: 0 0 35px;
 }
@@ -239,4 +239,309 @@
 
 .cocktail-content .btn {
     text-align: center;
+}
+
+/* TABLET VERSION */
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+
+    .menu-hero {
+        height: 389px;
+        background-image: url("../images/tab_chef_recommandation.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .menu-hero-content h1 {
+        font-size: 84px;
+        line-height: 1.1;
+    }
+
+    /* TABLET: FOOD RECOMMENDATION */
+
+    .menu-recommendations {
+        flex-direction: column;
+        align-items: center;
+        padding: 65px 0;
+        gap: 64px;
+    }
+
+    .recommendation-card {
+        width: 82%;
+        height: 640px;
+    }
+
+    /* TABLET: MAIN COURSE */
+
+    .main-course-section {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .main-course-image {
+        width: 100%;
+        height: 515px;
+    }
+
+    .main-course-content {
+        width: 100%;
+        padding: 40px 8% 55px;
+    }
+
+    .main-course-content h1 {
+        font-size: 48px;
+        line-height: 58px;
+        margin-bottom: 35px;
+    }
+
+    .main-course-item {
+        padding: 10px 0 6px;
+    }
+
+    .main-course-item h4 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .main-course-item p {
+        max-width: 85%;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .main-course-price {
+        font-family: var(--font-base);
+        font-size: 11px;
+    }
+
+    /* TABLET: DESSERT BANNER */
+
+    .dessert-hero {
+        height: 180px;
+    }
+
+    .dessert-hero h1 {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    /* TABLET: DESSERT GALLERY */
+
+    .dessert-gallery {
+        height: auto;
+        padding: 65px 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 64px;
+    }
+
+    /* Dessert Cards */
+
+    .dessert-card {
+        width: 82%;
+    }
+
+    /* Dessert Images */
+
+    .dessert-card img {
+        width: 100%;
+        height: 520px;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* Lime Pie & Raspberry */
+    .dessert-card {
+    flex-direction: column-reverse;
+    }
+
+    /* Classic Tiramisu & Creme Brulee */
+    .dessert-card.lower {
+        align-self: auto;
+        flex-direction: column;
+    }
+    
+}
+
+/* MOBILE VERSION */
+
+@media screen and (max-width: 640px) {
+
+    /* MOBILE: HERO BANNER */
+
+    .menu-hero {
+        height: 340px;
+        background-image: url("../images/mob_chef_recommandation.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .menu-hero-content .subtitle {
+        font-size: 14px;
+        margin: 0 0 15px;
+    }
+
+    .menu-hero-content h1 {
+        font-size: 64px;
+        line-height: 1.1;
+        color: var(--text-white);
+    }
+
+    /* MOBILE: FOOD RECOMMENDATION */
+
+    .menu-recommendations {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+        gap: 40px;
+    }
+
+    .recommendation-card {
+        width: 82%;
+        height: 400px;
+    }
+
+    /* MOBILE: FOOD RECOMMENDATION */
+
+    .menu-recommendations {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+        gap: 40px;
+    }
+
+    .recommendation-card {
+        width: 100%;
+        height: 615px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* Food Names */
+
+    .recommendation-card h4 {
+        left: 0;
+        right: 0;
+        bottom: 15px;
+        text-align: center;
+    }
+
+    /* MOBILE: MAIN COURSE */
+
+    .main-course-section {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .main-course-image {
+        display: none;
+    }
+
+    .main-course-content {
+        width: 100%;
+        padding: 50px 8% 85px;
+    }
+
+    .main-course-content h1 {
+    margin-bottom: 45px;
+    text-align: center;
+    }
+
+    .main-course-item {
+        padding: 18px 0 16px;
+    }
+
+    .main-course-item p {
+        max-width: 75%;
+    }
+
+    .main-course-price {
+        color: var(--text-black);
+    }
+
+    /* MOBILE: DESSERT BANNER */
+.dessert-hero {
+    height: 280px;
+    background-image: url("../images/mob_dessert_background.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* MOBILE: DESSERT GALLERY */
+
+.dessert-gallery {
+    height: auto;
+    padding: 55px 0 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 45px;
+}
+
+/* DESSERT CARDS */
+
+.dessert-card,
+.dessert-card.lower {
+    width: 87.5%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* DESSERT IMAGES */
+
+.dessert-card img {
+    order: 1;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+/* DESSERT NAME AND PRICE */
+
+.dessert-card-info {
+    order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* MOBILE: BEST COCKTAILS */
+
+.cocktail-hero {
+    width: 100%;
+    height: 680px;
+    padding: 0 8%;
+    background-size: cover;
+    background-position: 40% center;
+}
+
+/* Cocktail Content */
+
+.cocktail-content {
+    width: 75%;
+    gap: 15px;
+}
+
+/* Heading */
+
+.cocktail-content h1 {
+    margin: 0;
+}
+
+/* Decorative Line */
+
+.cocktail-divider {
+    margin: 25px 0 15px;
+}
+
+/* Description */
+
+.cocktail-content .cocktail-description {
+    margin: 0 0 25px;
+}
 }
