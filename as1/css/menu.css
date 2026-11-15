@@ -236,13 +236,51 @@
 }
 
 /* Button */
-
+ 
 .cocktail-content .btn {
     text-align: center;
 }
 
-/* TABLET VERSION */
 
+
+@media screen and (min-width: 1300px) and (max-width: 1510px) {
+
+    .dessert-card-info h4 {
+        font-size: 26px;
+        white-space: nowrap;
+    }
+
+}
+
+@media screen and (min-width: 1220px) and (max-width: 1300px) {
+
+    .dessert-card-info h4 {
+        font-size: 22px;
+        white-space: nowrap;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1220px) {
+
+    .dessert-card-info h4 {
+        font-size: 19px;
+        white-space: nowrap;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+
+    .recommendation-card.duck h4 {
+        font-size: 26px;
+        white-space: nowrap;
+    }
+
+}
+
+
+/* TABLET VERSION */
 @media screen and (min-width: 641px) and (max-width: 1024px) {
 
     .menu-hero {
@@ -508,6 +546,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 10px;
 }
 
 /* MOBILE: BEST COCKTAILS */
