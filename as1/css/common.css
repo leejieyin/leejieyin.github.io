@@ -57,6 +57,10 @@ body {
     color: var(--text-dark-grey);
 }
 
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+}
+
 /* === GLOBAL TYPOGRAPHY === */
 
 /* Headings */
@@ -126,6 +130,12 @@ p,
     letter-spacing: 1.4px;
 }
 
+.price {
+    font-family: var(--font-base);
+    letter-spacing: 1.5px;
+}
+
+
 /* Mobile Typography */
 
 @media screen and (max-width: 640px) {
@@ -167,9 +177,9 @@ p,
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 160px;
-    height: 36px;
-    padding: var(--btn-padding);
+    width: fit-content;
+    height: auto;
+    padding: 12px 24px;
     letter-spacing: 0.5px;
     text-decoration: none;
     text-transform: uppercase;
@@ -177,6 +187,7 @@ p,
     border-radius: 0;
     cursor: pointer;
     transition: all var(--transition);
+    white-space: nowrap;
 }
 
 /* Button Black*/

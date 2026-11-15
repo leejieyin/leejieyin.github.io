@@ -1,0 +1,242 @@
+/*SECTION 1: HERO BANNER*/
+
+.menu-hero {
+    width: 100%;
+    height: 320px;
+    background-image: url("../images/chef_recommendation.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-hero-content {
+    text-align: center;
+}
+
+.menu-hero-content .subtitle {
+    margin: 0 0 15px;
+}
+
+.menu-hero-content h1 {
+    color: var(--text-white);
+}
+
+
+/* SECTION:FOOD RECOMMENDATION */
+
+.menu-recommendations {
+    width: 100%;
+    padding: 65px 3.7%;
+    background-color: var(--bg-white);
+    display: flex;
+    gap: 32px;
+}
+
+/* Recommendation Cards */
+
+.recommendation-card {
+    width: 33.33%;
+    height: 487px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Food Images */
+
+.lobster {
+    background-image: url("../images/butter_poached_lobster.png");
+}
+
+.chocolate {
+    background-image: url("../images/chocolate_ball_cake.png");
+}
+
+.duck {
+    background-image: url("../images/duck_breast.png");
+}
+
+/* Food Names */
+
+.recommendation-card h4 {
+    color: var(--text-white);
+    position: absolute;
+    bottom: 7px;
+    right: 15px;
+    text-align: right;
+}
+
+
+/* SECTION: MAIN COURSE */
+
+.main-course-section {
+    width: 100%;
+    height: 970px;
+    display: flex;
+    background-color: var(--bg-white);
+}
+
+/* Left: Food Image */
+
+.main-course-image {
+    width: 49%;
+    height: 970px;
+    background-image: url("../images/main_course_menu.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Right: Menu Content */
+
+.main-course-content {
+    width: 51%;
+    padding: 45px 5.5%;
+}
+
+/* Main Course Heading */
+
+.main-course-content h1 {
+    color: var(--text-black);
+    margin: 0 0 35px;
+}
+
+/* Dish Item */
+
+.main-course-item {
+    padding: 10px 0 6px;
+    border-bottom: 1px solid var(--grey-light);
+}
+
+/* Dish Name and Price */
+
+.main-course-item-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-course-price {
+    color: var(--text-black);
+}
+
+/* Last Dish */
+.main-course-item.last-item {
+    border-bottom: none;
+}
+
+/* SECTION: DESSERT BANNER */
+
+.dessert-hero {
+    height: 313px;
+    background-image: url("../images/dessert_background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dessert-hero h1 {
+    color: var(--text-white);
+}
+
+/* SECTION: DESSERT GALLERY */
+
+.dessert-gallery {
+    height: 705px;
+    padding: 58px 9.5% 56px;
+    background-color: var(--bg-white);
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Dessert Cards */
+
+.dessert-card {
+    width: 23.6%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Dessert Images */
+
+.dessert-card img {
+    width: 100%;
+    height: 410px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Dessert Name and Price */
+
+.dessert-card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Lower Dessert Cards */
+
+.dessert-card.lower {
+    align-self: flex-end;
+}
+
+
+/* SECTION: BEST COCKTAILS */
+
+.cocktail-hero {
+    width: 100%;
+    height: 930px;
+
+    background-image:
+    url("../images/best croctails 1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 9.7%;
+}
+
+/* Cocktail Content */
+
+.cocktail-content {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.cocktail-content h1 {
+    color: var(--text-white);
+    margin: 0;
+}
+
+/* Decorative Line */
+
+.cocktail-divider {
+    width: 82px;
+    height: 1px;
+    background-color: var(--bg-white);
+    margin: 70px 0 25px;
+}
+
+/* Description */
+
+.cocktail-content p:not(.subtitle) {
+    color: var(--text-white);
+    margin: 0 0 35px;
+}
+
+/* Button */
+
+.cocktail-content .btn {
+    text-align: center;
+}
