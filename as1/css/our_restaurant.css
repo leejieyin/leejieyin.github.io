@@ -1,6 +1,9 @@
+.hero-header {
+    position: absolute;
+    opacity: 0.7;
+}
 
 /* === HERO SECTION === */
-
 .hero {
     width: 100%;
     min-height: 780px;
@@ -126,6 +129,7 @@
     width: 100%;
     height: auto;
 }
+
 .gallery-image .tablet-gallery,
 .gallery-image .mobile-gallery {
     display: none;
@@ -200,6 +204,10 @@
 
 @media screen and (min-width: 641px) and (max-width: 1024px) {
 
+    .hero-header {
+        opacity: 1;
+    }
+
     /* Hero Section */
 
     .hero {
@@ -252,26 +260,26 @@
 
     /* Gallery Section */
     .gallery-heading {
-    padding: 40px 5% 25px;
+        padding: 40px 5% 25px;
     }
 
     /* Tablet Gallery Image */
     .gallery-image {
-    width: 84%;
-    margin: 0 auto;
+        width: 84%;
+        margin: 0 auto;
     }
 
     .gallery-image .desktop-gallery {
-    display: none;
+        display: none;
     }
 
     .gallery-image .tablet-gallery {
-    display: block;
-    width: 100%;
-    height: auto;
+        display: block;
+        width: 100%;
+        height: auto;
     }
 
-        /* Testimonials Section */
+    /* Testimonials Section */
 
     .testimonials-section {
         padding: 80px 7% 100px;
@@ -294,18 +302,22 @@
 
     /* Customer Name */
     .testimonial-card h4 {
-    margin: 0 0 70px;
+        margin: 0 0 70px;
     }
 
     /* Review Text */
     .testimonial-card p {
-    margin: 0 0 70px;
+        margin: 0 0 70px;
     }
 }
 
 /* === MOBILE === */
 
 @media screen and (max-width: 640px) {
+
+    .hero-header {
+        opacity: 1;
+    }
 
     /* Hero Section */
 
@@ -344,7 +356,7 @@
         margin-bottom: 45px;
     }
 
-        /* Elegance Section */
+    /* Elegance Section */
 
     .elegance-section {
         padding: 55px 0 60px;
@@ -383,26 +395,26 @@
 
     /* Gallery Section */
     .gallery-heading {
-    padding: 40px 5% 25px;
+        padding: 40px 5% 25px;
     }
 
     /* Mobile Gallery Image */
     .gallery-image {
-    width: 100%;
+        width: 100%;
     }
 
     .gallery-image .desktop-gallery,
     .gallery-image .tablet-gallery {
-    display: none;
+        display: none;
     }
 
     .gallery-image .mobile-gallery {
-    display: block;
-    width: 100%;
-    height: auto;
+        display: block;
+        width: 100%;
+        height: auto;
     }
 
-        /* Testimonials Section */
+    /* Testimonials Section */
 
     .testimonials-section {
         padding: 45px 0 40px;
@@ -448,4 +460,4 @@
         width: 270px;
     }
 
-}    
+}
