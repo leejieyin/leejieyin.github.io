@@ -204,7 +204,9 @@
     gap: 20px;
     margin-top: 50px;
 }
-
+.couples-reserve-note .subtitle {
+    color: var(--text-black);
+}
 .reserve-line {
     width: 20px;
     border-top: 1px solid var(--grey);
@@ -368,7 +370,6 @@
     /* MEMBERSHIP PLANS */
 
     .membership-plans {
-        display: flex;
         flex-wrap: wrap;
         justify-content: center;
         padding: 40px 7%;
@@ -398,12 +399,6 @@
 
     .promotion-image {
         width: 100%;
-    }
-
-    .promotion-image img {
-        width: 100%;
-        height: auto;
-        display: block;
     }
 
     /* Promotion Content */
@@ -456,7 +451,6 @@
     /* COUPLES DINING EXPERIENCE */
 
     .couples-promotion {
-        width: 100%;
         max-width: 100%;
         margin: 60px auto;
     }
@@ -545,4 +539,205 @@
     .membership-card {
         width: 45%;
     }
+}
+
+/* === MOBILE RESPONSIVE === */
+
+@media screen and (max-width: 640px) {
+
+    /* FEATURED PROMOTION */
+
+    .promotion-hero {
+        flex-direction: column;
+    }
+
+    /* Promotion Image */
+
+    .promotion-image {
+        width: 100%;
+    }
+
+    .promotion-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Promotion Content */
+
+    .promotion-content {
+        width: 100%;
+        padding: 45px 20px 85px;
+        gap: 16px;
+        box-sizing: border-box;
+    }
+
+    /* === SEASONAL SPECIALS === */
+
+    .seasonal-specials {
+        padding: 55px 20px;
+        text-align: center;
+    }
+
+    /* Heading */
+
+    .seasonal-heading {
+        margin-bottom: 35px;
+    }
+
+    .seasonal-divider {
+        margin: 15px auto 25px;
+    }
+
+    .seasonal-heading h2 {
+        margin-bottom: 18px;
+    }
+
+    .seasonal-heading p {
+        max-width: 100%;
+    }
+
+    /* Promotion Cards */
+
+    .seasonal-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .seasonal-card {
+        width: 100%;
+    }
+
+    /* Card Image */
+
+    .seasonal-card img {
+        margin-bottom: 20px;
+    }
+
+    /* Card Content */
+
+    .seasonal-card h4 {
+        margin-bottom: 12px;
+    }
+
+    .seasonal-card p {
+        margin-bottom: 15px;
+    }
+
+    .seasonal-card .btn {
+        margin-top: 5px;
+    }
+
+        /* === COUPLES DINING EXPERIENCE === */
+
+    .couples-promotion {
+        width: 82%;
+        max-width: 100%;
+        margin: 50px auto;
+    }
+
+    /* Common Layout */
+
+    .couples-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        position: relative;
+    }
+
+    /* Reset Original Image Positions */
+
+    .couples-item img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        display: block;
+        order: 1;
+    }
+
+    .couples-item h5 {
+        order: 2;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin-top: 12px;
+    }
+
+    /* Reservation Information */
+
+    .couples-reserve-note {
+        margin-top: 35px;
+        gap: 12px;
+        text-align: center;
+    }
+
+    /* Reservation Button */
+
+    .couples-reserve-action {
+        margin-top: 20px;
+    }
+
+    
+/* === MEMBERSHIP PLANS - MOBILE === */
+
+.membership-plans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 40px 0;
+    gap: 25px;
+}
+
+/* Membership Cards */
+
+.membership-card {
+    width: 66%;
+    max-width: 420px;
+
+    height: auto;
+    aspect-ratio: 4 / 5;
+
+    box-sizing: border-box;
+    padding: 75px 18px 22px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Membership Title */
+
+.membership-card h4 {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+/* Benefits */
+
+.membership-benefits {
+    width: 100%;
+    text-align: left;
+}
+
+.benefit {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+}
+
+/* Apply Button */
+
+.membership-card .btn {
+    margin-top: auto;
+}
+
 }

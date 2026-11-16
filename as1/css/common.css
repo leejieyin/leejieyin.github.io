@@ -163,6 +163,12 @@ p,
         line-height: 81.3px;
     }
 
+    .section-title,
+    .menu-title {
+        font-family: var(--font-italic);
+        font-style: italic;
+    }
+
     .section-title {
         font-size: 43px;
         line-height: 52px;
@@ -172,6 +178,7 @@ p,
         font-size: 38px;
         line-height: 45.9px;
     }
+
 
 }
 
