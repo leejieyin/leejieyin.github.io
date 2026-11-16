@@ -1,0 +1,126 @@
+
+/* FEATURED PROMOTION */
+
+.promotion-hero {
+    display: flex;
+    background-color: var(--bg-black);
+}
+
+/* Promotion Image */
+
+.promotion-image {
+    width: 50%;
+}
+
+.promotion-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Promotion Content */
+
+.promotion-content {
+    width: 50%;
+    padding: 0 6%;
+    color: var(--text-white);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+
+
+/* === SEASONAL SPECIALS === */
+
+.seasonal-specials {
+    background-color: var(--bg-white);
+    padding: 100px 9%;
+    text-align: center;
+}
+
+/* Heading */
+
+.seasonal-heading {
+    margin-bottom: 70px;
+}
+
+.seasonal-divider {
+    width: 60px;
+    border-top: 1px solid var(--grey-light);
+    margin: 20px auto 35px;
+}
+
+.seasonal-heading h2 {
+    margin-bottom: 25px;
+}
+
+/* Promotion Cards */
+
+.seasonal-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.seasonal-card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Card Image */
+
+.seasonal-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 35px;
+}
+
+/* Card Content */
+
+.seasonal-card h4 {
+    margin-bottom: 20px;
+}
+
+.seasonal-card p {
+    margin-bottom: 18px;
+}
+
+.seasonal-card .btn {
+    margin-top: auto;
+}
+
+
+/* === ROMANTIC DINING COLLECTION === */
+
+.romantic-dining {
+    height: 490px;
+    background-image: url("../images/romantic_dining.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Content */
+
+.romantic-content {
+    width: 70%;
+    text-align: center;
+    color: var(--text-white);
+}
+
+.romantic-content h2 {
+    margin-bottom: 25px;
+}
+
+.romantic-content p {
+    margin-bottom: 0;
+}
+
