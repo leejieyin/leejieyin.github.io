@@ -317,9 +317,41 @@
 }
 
 
+/* === MEDIUM DESKTOP RESPONSIVE === */
+
+@media screen and (min-width: 1251px) and (max-width: 1466px) {
+
+    /* MEMBERSHIP PLANS */
+
+    .membership-plans {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 9%;
+    gap: 40px;
+    }
+
+    .membership-card {
+    width: 30%;
+}
+
+    .membership-card h4 {
+        font-size: 27px;
+        line-height: 34px;
+        margin-bottom: 28px;
+    }
+
+    .benefit {
+        font-size: 17px;
+        line-height: 1.5;
+        gap: 10px;
+        margin-bottom: 18px;
+    }
+
+}
+
 /* === SMALL DESKTOP RESPONSIVE === */
 
-@media screen and (min-width: 1024px) and (max-width: 1250px) {
+@media screen and (min-width: 1025px) and (max-width: 1250px) {
 
     /* FEATURED PROMOTION */
 
@@ -333,6 +365,23 @@
         line-height: 76px;
     }
 
+    /* MEMBERSHIP PLANS */
+
+    .membership-plans {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 40px 7%;
+        gap: 40px;
+    }
+
+    .membership-card {
+        width: 43%;
+    }
+
+    .membership-card:last-child {
+    margin-right: 48%;
+}
 }
 
 /* === TABLET RESPONSIVE === */
