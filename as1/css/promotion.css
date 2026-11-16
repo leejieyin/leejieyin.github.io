@@ -120,7 +120,199 @@
     margin-bottom: 25px;
 }
 
-.romantic-content p {
-    margin-bottom: 0;
+/* === COUPLES DINING EXPERIENCE === */
+
+.couples-promotion {
+    width: 1000px;
+    max-width: 90%;
+    margin: 70px auto 60px;
+    background-color: var(--bg-white);
+}
+
+/* Common Layout */
+
+.couples-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    position: relative;
+}
+
+.couples-item img {
+    display: block;
+    height: auto;
+}
+
+/* First Image - Dessert */
+
+.couples-dessert-row {
+    z-index: 2;
+}
+
+.couples-dessert-row img {
+    width: 120%;
+}
+
+.couples-dessert-row h5 {
+    text-align: right;
+    padding: 0 15px;
+    margin-top: -90px;
+}
+
+/* Second Image - Set Menu */
+
+.couples-menu-row {
+    z-index: 1;
+    margin-top: -230px;
+}
+
+.couples-menu-row h5 {
+    text-align: center;
+    padding: 0 25px;
+    
+}
+
+.couples-menu-row img {
+    width: 110%;
+    justify-self: end;
+}
+
+/* Third Image - Sparkling Wine */
+
+.couples-wine-row {
+    z-index: 3;
+    margin-top: -109px;
+}
+
+.couples-wine-row img {
+    width: 85%;
+    justify-self: center;
+    margin-left: 250px;
+}
+
+.couples-wine-row h5 {
+    text-align: right;
+    padding: 0 15px;
+}
+
+/* Reservation Information */
+
+.couples-reserve-note {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.reserve-line {
+    width: 20px;
+    border-top: 1px solid var(--grey);
+}
+
+/* Reservation Button */
+
+.couples-reserve-action {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+/* === MEMBERSHIP TIER === */
+
+.membership-tier {
+    height: 467px;
+    background-image: url("../images/membership_tier.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Content */
+
+.membership-content {
+    width: 850px;
+    max-width: 90%;
+    text-align: center;
+    color: var(--text-white);
+}
+
+.membership-content h2 {
+    margin-bottom: 30px;
+}
+
+.membership-content p {
+    line-height: 1.6;
+}
+
+/* === MEMBERSHIP PLANS === */
+
+.membership-plans {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 9%;
+    gap: 50px;
+    background-color: var(--bg-white);
+}
+
+/* Membership Card */
+
+.membership-card {
+    width: 33.33%;
+    height: 470px;
+    color: var(--text-white);
+    text-align: center;
+    padding: 35px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Background Images */
+
+.classic {
+    background-image: url("../images/classic.jpg");
+}
+
+.prestige {
+    background-image: url("../images/prestige.jpg");
+}
+
+.elite {
+    background-image: url("../images/elite.jpg");
+}
+
+/* Membership Title */
+
+.membership-card h4 {
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+/* Benefits */
+
+.membership-benefits {
+    width: 100%;
+    text-align: left;
+}
+
+.benefit {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.benefit img {
+    width: 15px;
+    height: 15px;
+}
+
+.membership-card .btn {
+    margin-top: auto;
 }
 
