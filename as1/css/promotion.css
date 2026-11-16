@@ -316,3 +316,184 @@
     margin-top: auto;
 }
 
+
+/* === SMALL DESKTOP RESPONSIVE === */
+
+@media screen and (min-width: 1024px) and (max-width: 1250px) {
+
+    /* FEATURED PROMOTION */
+
+    .promotion-content {
+        padding: 0 5%;
+        gap: 18px;
+    }
+
+    .promotion-content h1 {
+        font-size: 70px;
+        line-height: 76px;
+    }
+
+}
+
+/* === TABLET RESPONSIVE === */
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+
+    /* FEATURED PROMOTION */
+
+    .promotion-hero {
+        flex-direction: column;
+    }
+
+    /* Promotion Image */
+
+    .promotion-image {
+        width: 100%;
+    }
+
+    .promotion-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Promotion Content */
+
+    .promotion-content {
+        width: 100%;
+        padding: 90px 23%;
+    }
+
+    /* SEASONAL SPECIALS */
+
+    .seasonal-specials {
+        padding: 70px 5%;
+    }
+
+    /* Heading */
+
+    .seasonal-heading {
+        margin-bottom: 35px;
+    }
+
+    /* Heading Description */
+
+    .seasonal-heading p {
+        max-width: 550px;
+        margin: 0 auto;
+    }
+
+    /* Promotion Cards */
+
+    .seasonal-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .seasonal-card {
+        width: 100%;
+    }
+
+    /* Card Image */
+
+    .seasonal-card img {
+        width: 280px;
+        height: 380px;
+        object-fit: cover;
+        margin-bottom: 25px;
+    }
+
+    /* COUPLES DINING EXPERIENCE */
+
+    .couples-promotion {
+        width: 100%;
+        max-width: 100%;
+        margin: 60px auto;
+    }
+
+    /* Common Layout */
+
+    .couples-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        position: relative;
+    }
+
+    /* Images */
+
+    .couples-item img {
+        order: 1;
+        width: 400px;
+        max-width: 100%;
+        object-fit: cover;
+        display: block;
+
+    }
+
+    /* Reset Original Image Positions */
+
+    .couples-dessert-row img,
+    .couples-menu-row img,
+    .couples-wine-row img {
+        width: 65%;
+        max-width: 550px;
+        height: 700px;
+        margin: 0;
+    }
+
+    /* Image Titles */
+
+    .couples-item h5 {
+        order: 2;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin-top: 15px;
+    }
+
+    /* Reset Original Layout */
+
+    .couples-dessert-row {
+        z-index: auto;
+    }
+
+    .couples-menu-row {
+        margin-top: 50px;
+    }
+
+    .couples-wine-row {
+        margin-top: 50px;
+    }
+
+    /* Reservation Information */
+
+    .couples-reserve-note {
+        margin-top: 50px;
+        gap: 15px;
+        text-align: center;
+    }
+
+    /* Reservation Button */
+
+    .couples-reserve-action {
+        margin-top: 25px;
+    }
+
+    /* MEMBERSHIP PLANS */
+
+    .membership-plans {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 9%;
+    gap: 50px;
+    }
+
+    /* Membership Cards */
+
+    .membership-card {
+        width: 45%;
+    }
+}

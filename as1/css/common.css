@@ -458,7 +458,7 @@ p,
 
 /* Desktop Small Screen */
 
-@media screen and (min-width: 1025px) and (max-width: 1250px) {
+@media screen and (min-width: 1024px) and (max-width: 1250px) {
 
     .header-container {
         padding: 0 8%;
