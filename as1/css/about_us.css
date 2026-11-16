@@ -67,7 +67,7 @@
 /* Main Heading */
 
 .about-title h1 {
-    color: var(--text-white); 
+    color: var(--text-white);
     margin: 20px 0 40px;
 }
 
@@ -97,7 +97,6 @@
 
 .culinary-title h1 {
     color: var(--text-black);
-    margin: 0;
 }
 
 /* Food Images */
@@ -155,7 +154,6 @@
 
 .commitment-text p {
     color: var(--text-white);
-    margin: 0;
 }
 
 /* Images */
@@ -240,6 +238,44 @@
     display: block;
 }
 
+/* SMALL DESKTOP */
+
+/* SMALL DESKTOP RESPONSIVE */
+
+@media screen and (min-width: 1301px) and (max-width: 1420px) {
+
+    .commitment-text h1 {
+        font-size: 75px;
+        line-height: 1.2;
+    }
+
+}
+
+@media screen and (min-width: 1151px) and (max-width: 1300px) {
+
+    .commitment-text h1 {
+        font-size: 70px;
+        line-height: 1.2;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1151px) {
+
+    .commitment-text h1 {
+        font-size: 65px;
+        line-height: 1.2;
+    }
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1040px) {
+
+    .about-subtitle {
+        gap: 20px;
+    }
+}
+
 /* TABLET RESPONSIVE */
 @media screen and (max-width: 1024px) {
 
@@ -252,7 +288,6 @@
 
     .about-hero {
         height: auto;
-        min-height: 0;
         flex-direction: column;
     }
 
@@ -314,7 +349,6 @@
 
     .culinary-image {
         flex: 1;
-        min-width: 0;
         height: 560px;
     }
 
@@ -369,7 +403,6 @@
     /* OUR ACHIEVEMENTS */
 
     .achievement-section {
-        min-height: 0;
         padding: 60px 5%;
         background-size: cover;
         background-position: right;
@@ -486,8 +519,7 @@
 
     /* OUR COMMITMENT */
     .commitment-section {
-    background-image: url("../images/mob_party.png");
-    height: 490px;
+        background-image: url("../images/mob_party.png");
+        height: 490px;
     }
 }
-
