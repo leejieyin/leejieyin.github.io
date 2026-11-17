@@ -371,7 +371,7 @@
 
     .membership-plans {
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
         padding: 40px 7%;
         gap: 40px;
     }
@@ -380,9 +380,7 @@
         width: 43%;
     }
 
-    .membership-card:last-child {
-    margin-right: 48%;
-}
+ 
 }
 
 /* === TABLET RESPONSIVE === */
@@ -443,8 +441,6 @@
 
     .seasonal-card img {
         width: 280px;
-        height: 380px;
-        object-fit: cover;
         margin-bottom: 25px;
     }
 
@@ -483,8 +479,9 @@
     .couples-wine-row img {
         width: 65%;
         max-width: 550px;
-        height: 700px;
-        margin: 0;
+        height: auto;
+        margin: 0 auto;
+        align-self: center;
     }
 
     /* Image Titles */
@@ -539,6 +536,32 @@
     .membership-card {
         width: 45%;
     }
+}
+
+/* === SMALL TABLET - MEMBERSHIP PLANS === */
+
+@media screen and (min-width: 641px) and (max-width: 830px) {
+
+    .membership-plans {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+        gap: 25px;
+    }
+
+    .membership-card {
+        width: 66%;
+        max-width: 420px;
+        height: auto;
+        aspect-ratio: 4 / 5;
+        box-sizing: border-box;
+        padding: 75px 18px 22px;
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
 }
 
 /* === MOBILE RESPONSIVE === */
@@ -627,6 +650,18 @@
 
     .seasonal-card .btn {
         margin-top: 5px;
+    }
+
+    .romantic-dining {
+        height: auto;
+        min-height: 490px;
+        padding: 70px 20px;
+        box-sizing: border-box;
+    }
+
+    .romantic-content {
+        width: 100%;
+        max-width: 600px;
     }
 
         /* === COUPLES DINING EXPERIENCE === */

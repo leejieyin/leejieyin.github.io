@@ -255,6 +255,7 @@ p,
     color: var(--btn-text-dark-grey);
 }
 
+
 /* === HEADER === */
 
 .header {
@@ -302,6 +303,53 @@ p,
 .header-nav a:hover {
     color: var(--text-white);
 }
+
+
+/* === NAVBAR SUBMENU === */
+
+.header-nav .has-submenu {
+    position: relative;
+}
+
+.header-nav .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background-color: var(--bg-black);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1.5s;
+    z-index: 100;
+}
+
+.header-nav .has-submenu:hover > .submenu {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.header-nav .submenu a {
+    display: block;
+    padding: 10px 12px;
+    white-space: nowrap;
+}
+.header-nav .submenu a:hover {
+    background-color: var(--color-primary);
+    color: var(--text-white);
+}
+
+.header-nav .has-submenu .submenu a:hover {
+    display: block;
+    background-color: #BDA16B !important;
+    color: #FFFFFF !important;
+    transition: all 0.3s ease;
+}
+
+.header-nav .has-submenu > a::after {
+    content: "⌄";
+    margin-left: 5px;
+}
+
 
 /* Order Icon */
 
@@ -528,3 +576,4 @@ p,
     }
 
 }
+
