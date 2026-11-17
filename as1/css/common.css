@@ -499,14 +499,62 @@ p,
 
 @media screen and (max-width: 1024px) {
 
-    .header-nav,
-    .header-order {
-        display: none;
-    }
+    /* Hamburger Menu */
 
     .header-hamburger {
         display: block;
         margin-left: auto;
+        font-size: 30px;
+        color: var(--text-white);
+        cursor: pointer;
+        z-index: 1002;
+        line-height: 1;
+    }
+
+    /* Mobile Navigation Menu */
+
+    .header-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    height: 100vh;
+    background-color: #222222;
+
+    position: fixed;
+    top: 0;
+    right: -50%;
+
+    opacity: 0;
+    transition: all 0.7s ease;
+    z-index: 1000;
+    }
+
+    /* Active Menu */
+
+    .header-nav.active {
+    opacity: 1;
+    right: 0;
+    }
+
+    /* Navigation Links */
+
+    .header-nav > a,
+    .header-nav > .has-submenu {
+        margin: 20px 0;
+    }
+
+    .header-nav > a,
+    .header-nav > .has-submenu > a {
+        font-size: 22px;
+    }
+
+    /* Hide Order Icon */
+
+    .header-order {
+        display: none;
     }
 
 }
